@@ -1,4 +1,5 @@
 import { useNavigate, useLocation } from 'react-router-dom'
+import { motherWrapper } from '../utils/tailcss'
 
 export default function BookList() {
   const navigate = useNavigate()
@@ -9,7 +10,7 @@ export default function BookList() {
   }
 
   return (
-    <div className="p-6">
+    <div className={`${motherWrapper} p-6`}>
       <h1 className="text-2xl mb-4">Book List</h1>
       <ul className="space-y-2">
         {[101, 102, 103].map((id) => (
