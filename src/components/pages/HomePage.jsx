@@ -11,7 +11,7 @@ export const HomePage = () => {
         <WaveParticles />
 
         <div className='py-40'>
-          <Link className='text-blue-500 block' to={'/books'}>Books</Link>
+          <Link className='text-blue-500 block' to={'/books'}>All Books</Link>
         </div>
     </div>
   )
