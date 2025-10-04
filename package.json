@@ -1,15 +1,15 @@
 {
   "name": "wasifs-heaven-frontend",
-  "homepage": "https://sabermh46.github.io",
+  "homepage": "https://sabermh46.github.io/wasifs-heaven",
   "private": true,
   "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build:prod": "NODE_ENV=production vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build:prod",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
