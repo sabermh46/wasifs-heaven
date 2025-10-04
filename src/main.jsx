@@ -11,7 +11,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
-        <BrowserRouter basename='/wasifs-heaven'>
+        <BrowserRouter>
           <App />
         </BrowserRouter>
       </PersistGate>
