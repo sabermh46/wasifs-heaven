@@ -2,12 +2,12 @@
 import './App.css'
 import { Routes, Route, useLocation } from 'react-router-dom'
 import MainLayout from './layouts/MainLayout'
-import BookList from './components/BookList'
 import ProtectedRoute from './components/ProtectedRoute'
 import ModalContainer from './components/common/ModalContainer'
-import { HomePage } from './components/pages/HomePage'
-import BookModal from './components/BookModal'
-import FallbackBooksWithModal from './components/BookFallBack'
+import { HomePage } from './components/pages/home'
+import BookModal from './components/pages/books/BookModal'
+import FallbackBooksWithModal from './components/pages/books/BookFallBack'
+import BookList from './components/pages/books'
 
 
 

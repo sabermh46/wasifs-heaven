@@ -1,12 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { motherWrapper } from '../../utils/tailcss'
-import WaveParticles from '../animation/WaveParticles'
+import { motherWrapper } from '../../../utils/tailcss'
+import WaveParticles from '../../animation/WaveParticles'
+import HeaderSection from './HeaderSection'
 
 export const HomePage = () => {
   return (
     <div className={`${motherWrapper}`}>
-        Home page content goes here.
+        
+      <HeaderSection />
 
         <WaveParticles />
 

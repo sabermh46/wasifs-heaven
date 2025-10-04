@@ -14,7 +14,7 @@ export const Footer = () => {
   return (
     <div className='bg-footer-bg'>
         <div className={`${motherWrapper}`}>
-            <div className='flex justify-between'>
+            <div className='flex justify-between flex-col lg:flex-row gap-6 py-10'>
                 {
                     datas.map((data, index) => (
                         data?.name === 'APP_OWNER' ? (

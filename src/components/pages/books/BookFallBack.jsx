@@ -1,6 +1,8 @@
-import BookList from "./BookList";
+import BookList from ".";
+import ModalContainer from "../../common/ModalContainer";
 import BookModal from "./BookModal";
-import ModalContainer from "./common/ModalContainer";
+
+
 
 
 export default function FallbackBooksWithModal() {

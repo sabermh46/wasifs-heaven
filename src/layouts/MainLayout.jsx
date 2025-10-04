@@ -8,11 +8,11 @@ export default function MainLayout() {
   const backgroundLocation = location.state && location.state.backgroundLocation
 
   return (
-    <>
+    <div className='overflow-x-clip'>
       <NavBar />
       <Outlet />
       {backgroundLocation && <ModalContainer />}
       <Footer />
-    </>
+    </div>
   )
 }
