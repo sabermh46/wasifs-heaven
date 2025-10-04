@@ -9,7 +9,7 @@
     "build": "NODE_ENV=production vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build:prod",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
