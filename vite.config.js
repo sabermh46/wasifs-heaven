@@ -4,10 +4,16 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: process.env.NODE_ENV === 'production' ? '/wasifs-heaven/'  // for GitHub Pages
-    : '/',  
+  base: '/wasifs-heaven/', 
   plugins: [
     react(),
     tailwindcss(),
-  ]
+  ],
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: undefined, // optional
+      },
+    },
+  },
 })
